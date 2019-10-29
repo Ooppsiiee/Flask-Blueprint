@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <form action="/" method="POST">
+            <div class="form-group">
+            <label for="namaPenyewa">Nama Penyewa</label>
+            <input type="text" class="form-control" name="namaPenyewa" id="namaPenyewa" aria-describedby="emailHelp" placeholder="Nama Penyewa">
+            </div>
+            <div class="form-group">
+            <label for="namaMotor">Nama Motor</label>
+            <input type="text" class="form-control" name="namaMotor" id="namaMotor" placeholder="Vario, Nmax">
+            </div>
+            <div class="form-group">
+             <label for="dkMotor">DK Motor</label>
+            <input type="text" class="form-control" name="dkMotor" id="dkMotor" placeholder="DK 9999 LD">
+            </div>
+            <div class="form-group">
+            <label for="tanggalSewa">Tanggal Mulai Sewa</label>
+            <input type="text" class="form-control" name="tanggalSewa" id="tanggalSewa" placeholder="30/12/2000">
+            </div>
+            <div class="form-group">
+            <label for="abisSewa">Tanggal Abis Sewa</label>
+            <input type="text" class="form-control" name="abisSewa" id="abisSewa" placeholder="31/12/2000">
+            </div>
+            <div class="form-group form-check">      
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+{% endblock %}
+

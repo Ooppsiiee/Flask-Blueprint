@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="alert alert-primary" role="alert">
+            Rental List Done
+    </div>
+</div>
+
+{% for list in lists %}
+
+<div class="container">
+  <ul class="list-group">
+      <li class="list-group-item active">{{ list.namaPenyewa }}</li>
+      <li class="list-group-item">{{ list.namaMotor }}</li>
+      <li class="list-group-item">{{ list.dkMotor }}</li>
+      <li class="list-group-item">{{ list.tanggalSewa }}</li>
+      <li class="list-group-item">{{ list.abisSewa }}</li>
+    </ul>
+</div>
+
+{% endfor %}
+
+
+
+
+  
+{% endblock %}
